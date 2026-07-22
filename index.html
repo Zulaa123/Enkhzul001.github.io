@@ -3,43 +3,92 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Enkhzul's Webpage</title>
+    <title>Enkhzul Lkhagvajav</title>
   </head>
   <body id="profile">
     <header>
-      <ul id="navbar">
-        <li><a href="index.html" class="nav-li" id="active">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </header>
-    <main class="home">
-      <div class="container">
-        <img class="square" src="portrait.jpg" alt="Me" />
-        <div class="aboutme">
-          <h1>Hello, I'm Enkhzul (Zulaa)</h1>
-          <p>
-            I am an undergraduate student at the University of Toronto, studying
-            Computer Science and Cognitive Science.
-          </p>
-          <p>
-            I’m greatly interested in web development and design. I’m currently
-            taking courses on Operating Systems and Database Systems, where I’m
-            learning about process management, memory allocation, and
-            concurrency.
-          </p>
-          <p>
-            On my free time, I like to illustrate, play chess, watch movies and
-            read books. I am always eager to learn more! Lately, I have been
-            trying to learn how to animate.
-          </p>
-          <p>Meanwhile, checkout my projects and feel free to reach out.</p>
-        </div>
+      <div class="nav-inner">
+        <a href="index.html" class="brand">Enkhzul Lkhagvajav</a>
+        <ul id="navbar">
+          <li><a href="index.html" id="active">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <span class="eyebrow">Computer Science &middot; Data Science</span>
+          <h1>Hi, I'm <span class="name-accent">Enkhzul (Zulaa)</span></h1>
+          <p class="tagline">
+            Incoming M.S. in Data Science at Columbia University, and a recent
+            Computer Science &amp; Cognitive Science graduate from the
+            University of Toronto.
+          </p>
+          <p class="lead">
+            I'm interested in machine learning, human-centered design, and
+            building software that connects data to real-world decisions.
+            Most recently, I worked as an ML Fellow at AI4Good Lab (in
+            partnership with the Vector Institute), forecasting winter-road
+            disruptions for remote communities across Northern Ontario.
+          </p>
+          <div class="cta-row">
+            <a href="projects.html" class="btn btn-primary">View my work</a>
+            <a href="contact.html" class="btn btn-secondary">Get in touch</a>
+          </div>
+          <div class="social-row">
+            <a href="https://github.com/Zulaa123" aria-label="GitHub">
+              <img src="logos/github.png" alt="GitHub" />
+            </a>
+            <a href="https://www.linkedin.com/in/lk-zul/" aria-label="LinkedIn">
+              <img src="logos/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a
+              href="mailto:zulaa.lkhagvajav@mail.utoronto.ca?subject=More%20info...&body=I%20was%20on%20your%20website%20and%20would%20like%20to%20learn%20more%20about%3A%0D%0A%0D%0A"
+              aria-label="Email"
+            >
+              <img src="logos/email.png" alt="Email" />
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-ring"></div>
+          <div class="monogram">EZ</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="card-grid">
+          <div class="info-card">
+            <h3>Columbia University</h3>
+            <p class="meta"><strong>M.S. in Data Science</strong> &middot; Starting Fall 2026</p>
+            <p>New York, NY</p>
+          </div>
+          <div class="info-card">
+            <h3>University of Toronto</h3>
+            <p class="meta">
+              <strong>Honours B.Sc., Computer Science &amp; Cognitive Science</strong>
+              &middot; June 2025
+            </p>
+            <p>cGPA: 3.75 / 4.00 &middot; Toronto, ON</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>A bit more about me</h2>
+        <p class="lead" style="max-width: 640px">
+          Outside of research and code, I like to illustrate, play chess,
+          watch movies, and read. I'm always looking to pick up something
+          new &mdash; lately that's been learning animation.
+        </p>
+      </section>
     </main>
     <footer id="footer">
-      <p>Copyright 2024 by Enkhzul.</p>
+      <p>&copy; 2026 Enkhzul Lkhagvajav.</p>
     </footer>
   </body>
 </html>

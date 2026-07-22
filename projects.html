@@ -3,102 +3,157 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Project page</title>
+    <title>Projects</title>
   </head>
   <body>
     <header>
-      <ul id="navbar">
-        <li><a href="index.html" class="nav-li">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="projects.html" id="active">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="nav-inner">
+        <a href="index.html" class="brand">Enkhzul Lkhagvajav</a>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html" id="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <h1>Projects</h1>
-      <p class="find">Here are some of my current and past projects.</p>
-      <div class="container">
-        <div class="card">
-          <img class="imgcard" src="project1.jpg" alt="Project1" />
-          <div class="text-container">
-            <h3>Recipe Website</h3>
-            <p class="card-text">
-              This project is a recipe website. You can use ingredients to
-              search for certain recipes.
-            </p>
+      <p class="lead" style="margin: 0.75rem 0 2.5rem">
+        A few things I've built and researched recently, spanning machine
+        learning, climate data science, and UX research.
+      </p>
+
+      <section>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-body">
+              <div class="project-header">
+                <h3>NorthCast AI</h3>
+                <p class="project-tagline">
+                  AI-assisted forecasting of winter-road disruptions in
+                  Northern Ontario
+                </p>
+                <a
+                  class="project-link"
+                  href="https://github.com/Zulaa123/NorthCast-App"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="logos/github.png" alt="" />
+                  View on GitHub
+                </a>
+                <div class="tag-row">
+                  <span class="tag">Python</span>
+                  <span class="tag">Pandas</span>
+                  <span class="tag">Scikit-learn</span>
+                </div>
+              </div>
+              <ul class="project-list">
+                <li>
+                  Forecasting winter-road accessibility and flagging
+                  communities at heightened risk of transportation isolation
+                  &mdash; supporting climate adaptation and infrastructure
+                  planning for 30+ remote Northern Ontario communities
+                  serving approximately 24,000 residents.
+                </li>
+                <li>
+                  Built a Python pipeline (Pandas, Scikit-learn) processing
+                  10+ years of ERA5 climate data across 30+ lakes, engineering
+                  physics-informed features (Freezing Degree Days) to model
+                  ice thickness and freeze-up timing.
+                </li>
+                <li>
+                  Trained cross-validated LASSO models with temporal and
+                  leave-one-lake-out validation to test generalization
+                  across unseen winters and regions.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-body">
+              <div class="project-header">
+                <h3>Cognitive Architecture Simulation</h3>
+                <a
+                  class="project-link"
+                  href="https://github.com/Zulaa123/COG403"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="logos/github.png" alt="" />
+                  View on GitHub
+                </a>
+                <div class="tag-row">
+                  <span class="tag">Python</span>
+                  <span class="tag">pyClarion</span>
+                  <span class="tag">Cognitive Modeling</span>
+                </div>
+              </div>
+              <ul class="project-list">
+                <li>
+                  Modeled human working memory and chunking mechanisms using
+                  the Clarion cognitive architecture.
+                </li>
+                <li>
+                  Implemented hierarchical memory structures simulating
+                  dual-process cognition (implicit vs. explicit processing).
+                </li>
+                <li>
+                  Analyzed recall accuracy across chunking strategies to
+                  identify patterns in memory retention performance.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-body">
+              <div class="project-header">
+                <h3>CoHabit &mdash; Roommate Matching Platform</h3>
+                <div class="tag-row">
+                  <span class="tag">Figma</span>
+                  <span class="tag">User Research</span>
+                  <span class="tag">Miro</span>
+                </div>
+              </div>
+              <ul class="project-list">
+                <li>
+                  Led end-to-end design research into student housing search
+                  and roommate compatibility.
+                </li>
+                <li>
+                  Interviewed 10+ university students and synthesized findings
+                  into personas, journey maps, and information architecture
+                  diagrams.
+                </li>
+                <li>
+                  Built a full Figma prototype covering profile matching,
+                  search filtering, and messaging features.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img class="imgcard" src="project2.jpg" alt="Project2" />
-          <div class="text-container">
-            <h3>Web-based Calculator</h3>
-            <p class="card-text">
-              This is a simple web project. I used html, javascript, and css to
-              develop a web based calculator.
-            </p>
-          </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div class="skills-row">
+          <span class="skill-chip"><img src="logos/python.png" alt="Python" />Python</span>
+          <span class="skill-chip"><img src="logos/js.png" alt="JavaScript" />JavaScript</span>
+          <span class="skill-chip"><img src="logos/react.png" alt="React" />React</span>
+          <span class="skill-chip"><img src="logos/node.png" alt="Node.js" />Node.js</span>
+          <span class="skill-chip"><img src="logos/java.png" alt="Java" />Java</span>
+          <span class="skill-chip"><img src="logos/html5.png" alt="HTML5" />HTML5</span>
+          <span class="skill-chip"><img src="logos/css.png" alt="CSS" />CSS</span>
+          <span class="skill-chip"><img src="logos/dj.png" alt="Django" />Django</span>
         </div>
-        <div class="card">
-          <img class="imgcard" src="project3.jpg" alt="Project3" />
-          <div class="text-container">
-            <h3>Personal Website</h3>
-            <p class="card-text">
-              This is the first assignment for CSC309. We are required to
-              develop our own personal websites.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="skills">
-        <h2>My Skills:</h2>
-        <img class="skills" src="logos/html5.png" alt="html" />
-        <img class="skills" src="logos/css.png" alt="css" />
-        <img class="skills" src="logos/js.png" alt="js" />
-        <img class="skills" src="logos/python.png" alt="python" />
-        <img class="skills" src="logos/java.png" alt="java" />
-        <img class="skills" src="logos/node.png" alt="nodejs" />
-        <img class="skills" src="logos/react.png" alt="react" />
-        <img class="skills" src="logos/dj.png" alt="django" />
-      </div>
-      <br />
-      <h2>Need a full stack web developer? Tell me about your project.</h2>
-      <form
-        action="https://postman-echo.com/post"
-        id="forms"
-        method="post"
-        enctype="multipart/form-data"
-      >
-        <label for="email">Your email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="example@gmail.com"
-        /><br />
-        <label for="project">Project Type:</label>
-        <select name="project" id="proj">
-          <option value="Personal Website">Personal Website</option>
-          <option value="Ecommerce">Ecommerce</option>
-          <option value="Game">Game</option></select
-        ><br />
-        <label for="concept">Concept:</label>
-        <textarea
-          id="concept"
-          name="concept"
-          placeholder="Enter your project concept here"
-        ></textarea
-        ><br />
-        <label for="attachments">Attachment:</label>
-        <input type="file" id="attachments" name="attachments" /><br />
-        <input type="checkbox" id="consent" name="consent" value="yes" />
-        <label for="consent" id="check-text"
-          >You agree to receive emails from me</label
-        ><br />
-        <button type="submit" form="forms" value="Submit">Send</button>
-      </form>
+      </section>
     </main>
     <footer>
-      <p>Copyright 2024 by Enkhzul.</p>
+      <p>&copy; 2026 Enkhzul Lkhagvajav.</p>
     </footer>
   </body>
 </html>
